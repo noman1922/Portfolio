@@ -1,0 +1,836 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abdullah Al Noman Khan</title>
+    <link href="output.css" rel="stylesheet" />
+
+    <!--On Scroll Animation AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!--Swiper Slider CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'secondary-500': '#1E293B',
+          'secondary-600': '#0F172A',
+          'primary-500': '#3B82F6',
+        }
+      }
+    }
+  }
+</script>
+
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    <nav
+      class="flex flex-wrap items-center justify-between p-5 bg-secondary-500"
+    >
+      <a
+        class="flex title-font font-medium items-center text-white mb-4 md:mb-0"
+      >
+        <span class="ml-3 text-xl">Abdullah AL Noman Khan</span>
+      </a>
+      <div class="flex md:hidden">
+        <button id="hamburger">
+          <img
+            class="toggle block"
+            src="./asset/menu-squared.png"
+            alt="menu icon"
+            width="40"
+            height="40"
+          />
+          <img
+            class="toggle hidden"
+            src="./asset/close-window.png"
+            alt="close icon"
+            width="40"
+            height="40"
+          />
+        </button>
+      </div>
+      <div
+        class="toggle hidden w-full md:w-auto md:flex text-right text-bold mt-5 md:mt-0 border-t-2 border-primary-500 md:border-none"
+      >
+        <a
+          href="#expertise"
+          class="block md:inline-block text-slate-200 hover:text-primary-500 px-3 py-3 border-b-2 border-primary-500 md:border-none uppercase"
+          >Expertise</a
+        >
+        <a
+          href="#projects"
+          class="block md:inline-block text-slate-200 hover:text-primary-500 px-3 py-3 border-b-2 border-primary-500 md:border-none uppercase"
+          >Projects</a
+        >
+        <a
+          href="#skills"
+          class="block md:inline-block text-slate-200 hover:text-primary-500 px-3 py-3 border-b-2 border-primary-500 md:border-none uppercase"
+          >Skills</a
+        >
+        <a
+          href="#blog"
+          class="block md:inline-block text-slate-200 hover:text-primary-500 px-3 py-3 border-b-2 border-primary-500 md:border-none uppercase"
+          >Blog</a
+        >
+      </div>
+      <a
+        href="#contact"
+        class="toggle hidden md:flex w-full md:w-auto px-4 py-2 text-right bg-primary-500 hover:bg-secondary-600 hover:text-primary-500 text-white md:rounded"
+        >Contact me</a
+      >
+    </nav>
+
+    <!-- Navbar End-->
+
+    <!-- Hero Section Start-->
+    <section class="text-gray-400 bg-secondary-500 body-font">
+      <div
+        class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 border-solid border-[18px] border-secondary-600 drop-shadow-xl sm:order-1 lg:order-2"
+        >
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="./asset/nmn.PNG"
+          />
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:pt-10 pt-8 items-center text-center"
+        >
+          <h1
+            class="title-font sm:text-6xl leading-6 text-3xl mb-4 font-bold text-white"
+          >
+            Hi, I'm <span class="text-primary-500">Abdullah Al Noman Khan</span>
+          </h1>
+          <h2 class="title-font sm:text-3xl text-xl mb-4 font-bold text-white">
+            Web Developer • System Designer • UI/UX Thinker
+          </h2>
+          <p class="mb-8 leading-relaxed text-slate-200">
+            Hello there! I'm a passionate Web Developer • System Designer • UI/UX Thinker. 
+            I'm currently an undergraduate student majoring in CSE at IUBAT. I love creating clean, responsive websites and building smart management systems. 
+            With a strong interest in UI/UX, I enjoy designing user-friendly interfaces that combine both beauty and functionality. 
+            I'm always eager to learn new technologies and take on exciting challenges.
+
+          </p>
+          <div class="flex justify-center my-6">
+            <a
+              href="https://www.linkedin.com/in/abdullah-al-noman-khan-639369186/"
+              target="_blank"
+            >
+              <button
+                class="inline-flex text-white bg-secondary-600 border-0 py-4 px-6 focus:outline-none hover:bg-primary-500 rounded-lg text-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                  />
+                </svg>
+              </button>
+            </a>
+            <a href="https://github.com/noman1922" target="_blank">
+              <button
+                class="ml-4 inline-flex text-white bg-secondary-600 border-0 py-4 px-6 focus:outline-none hover:bg-primary-500 hover:text-white rounded-lg text-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.22 2.2.82a7.65 7.65 0 0 1 4.01 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38C13.71 14.53 16 11.54 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </button>
+            </a>
+            <a
+              href="https://www.facebook.com/md.noman.blz/"
+              target="_blank"
+            >
+              <button
+                class="ml-4 inline-flex text-white bg-secondary-600 border-0 py-4 px-6 focus:outline-none hover:bg-primary-500 hover:text-white rounded-lg text-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 4.02 3.05 7.34 7 7.93v-5.61H5.5V8h1.5V6.65c0-1.49.89-2.32 2.26-2.32.66 0 1.36.12 1.36.12v1.5h-.76c-.75 0-.98.46-.98.93V8h1.68l-.27 1.32H8.88v5.61C12.95 15.34 16 12.02 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </button>
+            </a>
+            <a href="mailto:mdnomanahamed22@gmail.ccom.com" target="_blank">
+              <button
+                class="ml-4 inline-flex text-white bg-secondary-600 border-0 py-4 px-6 focus:outline-none hover:bg-primary-500 hover:text-white rounded-lg text-lg"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-envelope"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-6.4 3.84a1 1 0 0 1-1.2 0L1 5.383V12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5.383z"
+                  />
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section End-->
+
+ <!-- My Expertise Section Start -->
+
+  <section id="expertise" class="text-gray-400 bg-secondary-500 body-font">
+    <div
+    class="container px-5 py-24 mx-auto flex flex-wrap border-t-2 border-secondary-600"
+    >
+    <div class="flex flex-col text-center w-full mb-20">
+      <h2
+      class="sm:text-4xl text-2xl font-medium title-font underline decoration-primary-500 decoration-4 underline-offset-8 text-slate-200"
+      >
+      My Expertise
+      </h2>
+    </div>
+    <div class="flex flex-wrap -m-4">
+      <div class="p-4 md:w-1/3" data-aos="fade-up" data-aos-delay="300">
+      <div
+        class="flex rounded-lg h-full bg-secondary-600 bg-opacity-60 p-8 flex-col"
+      >
+        <div class="flex items-center mb-3">
+        <div
+          class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-primary-500 text-white flex-shrink-0"
+        >
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+          >
+          <path
+            d="M8 2v2H6a2 2 0 00-2 2v2H2v2h2v4H2v2h2v2a2 2 0 002 2h2v2h2v-2h4v2h2v-2h2a2 2 0 002-2v-2h2v-2h-2v-4h2V8h-2V6a2 2 0 00-2-2h-2V2h-2v2h-4V2H8zm-2 6h12v8H6V8zm2 2v4h4v-4H8z"
+          />
+          </svg>
+        </div>
+        <h2 class="text-slate-200 text-lg title-font font-medium">
+          Web Development
+        </h2>
+        </div>
+        <div class="flex-grow">
+        <p class="leading-relaxed text-base">
+        I have a strong passion for Web Development.
+        I enjoy building responsive and dynamic websites using HTML, CSS, JavaScript, PHP, and MySQL.
+        I have worked on several projects that involve creating user-friendly interfaces and ensuring optimal performance.
+        </p>
+        </div>
+      </div>
+      </div>
+      <div class="p-4 md:w-1/3" data-aos="fade-up" data-aos-delay="400">
+      <div
+        class="flex rounded-lg h-full bg-secondary-600 bg-opacity-60 p-8 flex-col"
+      >
+        <div class="flex items-center mb-3">
+        <div
+          class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-primary-500 text-white flex-shrink-0"
+        >
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+          >
+          <path
+            d="M12 2a10 10 0 00-2.96 19.5c-.2-.6-.3-1.2-.3-1.85a6.25 6.25 0 116.5-10.3 4 4 0 117.04 2.25A9.96 9.96 0 0012 2zm0 2c4.42 0 8 3.58 8 8 0 .36-.03.72-.08 1.07-.58-.4-1.28-.57-1.99-.44a4 4 0 00-7.63-1.82 6.25 6.25 0 00-4.64 6.02c-.68-.47-1.26-1.04-1.74-1.67A8 8 0 0112 4zm-4 6a1 1 0 100 2 1 1 0 000-2zm8 2a1 1 0 100 2 1 1 0 000-2zm-4 2.5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm5.5-1.5a1 1 0 100 2 1 1 0 000-2zM8 16a1 1 0 100 2 1 1 0 000-2zm4-1a1 1 0 100 2 1 1 0 000-2z"
+          />
+          </svg>
+        </div>
+        <h2 class="text-slate-200 text-lg title-font font-medium">
+          Business Analysis
+        </h2>
+        </div>
+        <div class="flex-grow">
+        <p class="leading-relaxed text-base">
+         I'm deeply interested in Business Analysis.
+         I enjoy exploring data, understanding business needs, 
+        and helping bridge the gap between technology and strategy to create smart,
+        data-driven solutions.
+        </p>
+        </div>
+      </div>
+      </div>
+      <div class="p-4 md:w-1/3" data-aos="fade-up" data-aos-delay="500">
+      <div
+        class="flex rounded-lg h-full bg-secondary-600 bg-opacity-60 p-8 flex-col"
+      >
+        <div class="flex items-center mb-3">
+        <div
+          class="w-8 h-8 mr-3 inline-flex items-center justify-center rounded-full bg-primary-500 text-white flex-shrink-0"
+        >
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+          >
+          <path
+            d="M12 2a3 3 0 00-3 3v.17a4 4 0 10-1.5 7.77v.11a3.5 3.5 0 103.13 2h2.74a3.5 3.5 0 103.13-2v-.11A4 4 0 1015 5.17V5a3 3 0 00-3-3zm0 2a1 1 0 011 1v2h-2V5a1 1 0 011-1zM6 9a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zM8.5 17a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm7 0a1.5 1.5 0 110-3 1.5 1.5 0 010 3zM9 13h6v2H9v-2z"
+          />
+          </svg>
+        </div>
+        <h2 class="text-slate-200 text-lg title-font font-medium">
+          UI/UX Design
+        </h2>
+        </div>
+        <div class="flex-grow">
+        <p class="leading-relaxed text-base">
+          I enjoy designing clean, user-friendly interfaces. 
+          I have experience using tools like Figma and Canva to create attractive UI/UX prototypes.
+          I believe that a good design is essential for a successful product.
+        </p>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- My Expertise Section End -->
+
+    <!-- Projects Section Start -->
+    <section id="projects" class="text-gray-400 body-font bg-secondary-500">
+      <div class="container px-5 py-24 mx-auto border-t-2 border-secondary-600">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2
+            class="sm:text-4xl text-2xl font-medium title-font underline decoration-primary-500 decoration-4 underline-offset-8 text-slate-200"
+          >
+            My Projects
+          </h2>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <a href="https://github.com/noman1922/Restaurant-Management-System">
+              <div class="bg-secondary-600 bg-opacity-40 p-6 rounded-lg">
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6 hover:scale-105 duration-500"
+                  src="./asset/1.png"
+                  alt="content"
+                />
+                <h2 class="text-lg text-slate-200 font-medium title-font mb-4">
+                  Restaurant-Management-System
+                </h2>
+                <p class="leading-relaxed text-base">
+                  Restaurant Management System" project aims to streamline restaurant operations by integrating a user-friendly web interface with backend functionalities such as order processing, menu management, and staff coordination using PHP, MySQL, HTML, CSS, and JavaScript
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <a href="https://github.com/noman1922/Loan-Management-System">
+              <div class="bg-secondary-600 bg-opacity-40 p-6 rounded-lg">
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6 hover:scale-105 duration-500"
+                  src="./asset/2.jpg"
+                  alt="content"
+                />
+                <h2 class="text-lg text-slate-200 font-medium title-font mb-4">
+                  Loan-Management-System
+                </h2>
+                <p class="leading-relaxed text-base">
+                  A Loan Management System built using HTML, PHP, and MySQL
+                </p>
+              </div>
+            </a>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <a href="https://github.com/noman1922/Supplier-Management-System">
+              <div class="bg-secondary-600 bg-opacity-40 p-6 rounded-lg">
+                <img
+                  class="h-40 rounded w-full object-cover object-center mb-6 hover:scale-105 duration-500"
+                  src="./asset/3.png"
+                  alt="content"
+                />
+                <h2 class="text-lg text-slate-200 font-medium title-font mb-4">
+                  Supplier-Management-System 
+                </h2>
+                <p class="leading-relaxed text-base">
+                  A Supplier Management System built using HTML, PHP, and MySQL
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Portfolio Section End -->
+
+    <!-- Skills Section Start-->
+    <section id="skills" class="text-gray-400 bg-secondary-500 body-font">
+      <div
+        class="container px-5 py-24 mx-auto flex flex-wrap border-t-2 border-secondary-600"
+      >
+        <div class="flex flex-col text-center w-full mb-20">
+          <h2
+            class="sm:text-4xl text-2xl font-medium title-font underline decoration-primary-500 decoration-4 underline-offset-8 text-slate-200"
+          >
+            My Skills
+          </h2>
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h2 class="title-font sm:text-3xl text-xl mb-4 font-bold text-white">
+            Web Developer & System Designer
+          </h2>
+          <p class="mb-8 leading-relaxed text-slate-200">
+            I'm skilled in building responsive web applications using HTML, CSS, JavaScript, PHP, and MySQL.
+            I also have experience with tools like GitHub for version control and Figma for UI/UX design.
+            I'm passionate about creating clean, user-friendly systems, and I’m always eager to explore new technologies and improve my development workflow.
+          </p>
+        </div>
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 md:w-1/4">
+              <div
+                class="flex rounded-lg bg-secondary-600 hover:scale-110 duration-500 p-4 flex-col justify-center items-center"
+              >
+                <img class="w-12" src="./asset/python.png" alt="" />
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4">
+              <div
+                class="flex rounded-lg bg-secondary-600 hover:scale-110 duration-500 p-4 flex-col justify-center items-center"
+              >
+                <img class="w-12" src="./asset/excel.png" alt="" />
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4">
+              <div
+                class="flex rounded-lg bg-secondary-600 hover:scale-110 duration-500 p-4 flex-col justify-center items-center"
+              >
+                <img class="w-12" src="./asset/github.png" alt="" />
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4">
+              <div
+                class="flex rounded-lg bg-secondary-600 hover:scale-110 duration-500 p-4 flex-col justify-center items-center"
+              >
+                <img class="w-12" src="./asset/c++.png" alt="" />
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4">
+              <div
+                class="flex rounded-lg bg-secondary-600 hover:scale-110 duration-500 p-4 flex-col justify-center items-center"
+              >
+                <img class="w-12" src="./asset/arduino.png" alt="" />
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4">
+              <div
+                class="flex rounded-lg bg-secondary-600 hover:scale-110 duration-500 p-4 flex-col justify-center items-center"
+              >
+                <img class="w-12" src="./asset/javascript.png" alt="" />
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4">
+              <div
+                class="flex rounded-lg bg-secondary-600 hover:scale-110 duration-500 p-4 flex-col justify-center items-center"
+              >
+                <img class="w-12" src="./asset/css.png" alt="" />
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4">
+              <div
+                class="flex rounded-lg bg-secondary-600 hover:scale-110 duration-500 p-4 flex-col justify-center items-center"
+              >
+                <img class="w-12" src="./asset/html5.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Skills Section End -->
+
+    <!-- Blog Section Start-->
+    <section id="blog" class="text-gray-400 bg-secondary-500 body-font">
+      <div class="container px-5 py-24 mx-auto border-t-2 border-secondary-600">
+        <div class="flex flex-wrap -mx-4 -my-8">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h2
+              class="sm:text-4xl text-2xl font-medium title-font underline decoration-primary-500 decoration-4 underline-offset-8 text-slate-200"
+            >
+              My Blog
+            </h2>
+          </div>
+          <div class="py-8 px-4 lg:w-1/3">
+            <div
+              class="bg-secondary-600 bg-opacity-40 p-6 rounded-lg h-full flex items-start"
+            >
+              <div
+                class="w-12 flex-shrink-0 flex flex-col text-center leading-none"
+              >
+                <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700"
+                  >11 Jan</span
+                >
+                <span
+                  class="font-medium text-lg leading-none text-gray-300 title-font"
+                  >2024</span
+                >
+              </div>
+              <div class="flex-grow pl-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-primary-500 mb-1 uppercase"
+                >
+                  Web Development
+                </h2>
+                <h3 class="title-font text-xl font-medium text-slate-200 mb-3">
+                  Mastering the Fundamentals of Web Development
+                </h3>
+                <p class="leading-relaxed mb-5">
+                  Web development is the backbone of the modern internet.
+                  This blog dives into how HTML, CSS, JavaScript, and PHP work together to create responsive and interactive websites.
+                </p>
+                <a
+                  href="#"
+                  class="mt-3 text-primary-500 inline-flex items-center"
+                  >Read more
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="py-8 px-4 lg:w-1/3">
+            <div
+              class="bg-secondary-600 bg-opacity-40 p-6 rounded-lg h-full flex items-start"
+            >
+              <div
+                class="w-12 flex-shrink-0 flex flex-col text-center leading-none"
+              >
+                <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700"
+                  >25 Jan</span
+                >
+                <span
+                  class="font-medium text-lg leading-none text-gray-300 title-font"
+                  >2025</span
+                >
+              </div>
+              <div class="flex-grow pl-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-primary-500 mb-1 uppercase"
+                >
+                  Business Analysis in Tech Projects
+                </h2>
+                <h3 class="title-font text-xl font-medium text-white mb-3">
+                  Role of Business Analysis in Tech Projects
+                </h3>
+                <p class="leading-relaxed mb-5">
+                  Understanding the needs of a business is key to building successful technology solutions.
+                  Business analysis helps bridge the gap between stakeholders and developers by gathering requirements, analyzing data, and ensuring the final system meets real-world goals.
+                  In this blog, I share insights on how business analysis drives effective project planning and smarter system design.
+                </p>
+                <a
+                  href="#"
+                  class="mt-3 text-primary-500 inline-flex items-center"
+                  >Read more
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="py-8 px-4 lg:w-1/3">
+            <div
+              class="bg-secondary-600 bg-opacity-40 p-6 rounded-lg h-full flex items-start"
+            >
+              <div
+                class="w-12 flex-shrink-0 flex flex-col text-center leading-none"
+              >
+                <span class="text-gray-400 pb-2 mb-2 border-b-2 border-gray-700"
+                  >02 Feb</span
+                >
+                <span
+                  class="font-medium text-lg leading-none text-gray-300 title-font"
+                  >2025</span
+                >
+              </div>
+              <div class="flex-grow pl-6">
+                <h2
+                  class="tracking-widest text-xs title-font font-medium text-primary-500 mb-1 uppercase"
+                >
+                  UI/UX Design
+                </h2>
+                <h3 class="title-font text-xl font-medium text-white mb-3">
+                  The Power of UI/UX in Modern Web Design
+                </h3>
+                <p class="leading-relaxed mb-5">
+                  UI/UX Design is the practice of designing interfaces that are not only visually attractive but also functionally efficient.
+                  It involves understanding users' needs and crafting digital experiences that are easy, intuitive, and enjoyable.
+                </p>
+                <a
+                  href="#"
+                  class="mt-3 text-primary-500 inline-flex items-center"
+                  >Read more
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Blog Section End -->
+
+    <!-- Contact Start -->
+    <form
+      id="contact"
+      class="text-slate-200 bg-secondary-500 body-font relative"
+      method="post"
+    >
+      <div
+        class="container px-5 py-24 mx-auto border-t-2 border-secondary-600 shadow-lg border-xl drop-shadow-lg"
+      >
+        <div class="flex flex-col text-center w-full mb-12">
+          <h2
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white"
+          >
+            Contact Me
+          </h2>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            I'm always open to collaboration and new opportunities. Feel free to
+            reach out to me.
+          </p>
+        </div>
+        <div class="lg:w-1/2 md:w-2/3 mx-auto">
+          <div
+            class="bg-secondary-600 bg-opacity-40 p-6 rounded-lg h-full flex items-start"
+          >
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label
+                    for="name"
+                    class="leading-7 text-sm text-slate-200 uppercase"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full bg-secondary-600 bg-opacity-40 rounded border border-slate-800 focus:border-primary-500 focus:ring-2 focus:ring-primary-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="p-2 w-1/2">
+                <div class="relative">
+                  <label
+                    for="email"
+                    class="leading-7 text-sm text-slate-200 uppercase"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full bg-secondary-600 bg-opacity-40 rounded border border-slate-800 focus:border-primary-500 focus:bg-gray-900 focus:ring-2 focus:ring-primary-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label
+                    for="message"
+                    class="leading-7 text-sm text-slate-200 uppercase"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="w-full bg-secondary-600 rounded border border-slate-800 focus:border-primary-500 focus:bg-gray-900 focus:ring-2 focus:ring-primary-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="p-4 w-full">
+                <button
+                  class="flex mx-auto text-primary-500 bg-secondary-600 hover:bg-primary-500 hover:text-slate-200 border-lg font-medium py-4 px-10 focus:outline-nonerounded text-lg uppercase"
+                >
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Contact End-->
+
+    <!-- Footer -->
+    <footer class="bg-secondary-600">
+      <div
+        class="px-5 py-6 xl:max-w-maxw m-auto text-center text-slate-400 text-sm"
+      >
+        Abdullah Al Noman Khan &copy; <span id="year"></span> | All Rights Reserved.
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- On Scroll Animation AOS script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+    <!-- Swiper Slider Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      // On Scroll Animation AOS
+      AOS.init();
+
+      // Toggle Navbar for Smaller Screen
+      document.getElementById("hamburger").onclick = function toggleMenu() {
+        const navToggle = document.getElementsByClassName("toggle");
+        for (let i = 0; i < navToggle.length; i++) {
+          navToggle.item(i).classList.toggle("hidden");
+        }
+      };
+
+      // Swiper Testimonial slider
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // Breakpoints for smaller device
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          480: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 3,
+          },
+        },
+      });
+
+      //   Dynamic Year in Footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      <!-- 💡 Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- 🌐 Contact Form -->
+
+
+<!-- 🧠 EmailJS Form Submission Script -->
+<script>
+  var $form = $("#contact");
+  if ($form.length) {
+    $form.on("submit", function (event) {
+      event.preventDefault(); // 🚫 Prevent default form submission
+
+      var formData = new FormData(this);
+
+      // ✅ EmailJS credentials — use your actual IDs and keys here
+      formData.append("service_id", "service_5o29lmm");       // ← Your Service ID
+      formData.append("template_id", "template_ct7ybpo");     // ← Your Template ID
+      formData.append("user_id", "QnVFphw9c5df2K619");         // ← Your Public Key
+
+      // 📤 Send form data using AJAX to EmailJS endpoint
+      $.ajax("https://api.emailjs.com/api/v1.0/email/send-form", {
+        type: "POST",
+        data: formData,
+        contentType: false,
+        processData: false
+      })
+      .done(function () {
+        alert("✅ Your email has been sent successfully!");
+        $form[0].reset(); // 🔄 Reset form fields
+      })
+      .fail(function (error) {
+        alert("⚠️ Oops... Something went wrong: " + JSON.stringify(error));
+      });
+    });
+  } else {
+    console.error("Contact form not found!");
+  }
+</script>
+
+  </body>
+</html>
