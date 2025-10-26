@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdullah Al Noman Khan</title>
     <link href="output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 
     <!--On Scroll Animation AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -30,9 +32,28 @@
     }
   }
 </script>
+
+<!-- Swiper CDN -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 <style>
   html {
     scroll-behavior: smooth;
+  }
+  body, h1, h2, h3, h4, h5, h6, p, a, span, li, div {
+    color: #fff !important;
+  }
+
+  /* keep your blue accents */
+  .text-primary-500, .hover\:text-primary-500:hover {
+    color: #3B82F6 !important;
+  }
+
+  /* make sure buttons and links stay readable */
+  button, a button {
+    color: #fff !important;
   }
 </style>
 
@@ -152,6 +173,7 @@
                     d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
                   />
                 </svg>
+                
               </button>
             </a>
             <a href="https://github.com/noman1922" target="_blank">
@@ -606,6 +628,70 @@
 
     <!--Skills Section End -->
 
+    <!-- ===== What I'm Learning Now Section ===== -->
+<section id="learning" class="py-16 bg-secondary-500 text-center reveal">
+  <h2 class="text-3xl font-bold text-primary mb-6">⚡ What I'm Learning Now</h2>
+  <p class="text-gray-300 mb-8">Always improving, one skill at a time </p>
+
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+    <div class="bg-secondary-400 p-4 rounded-xl shadow-md hover:-translate-y-2 hover:shadow-primary/30 transition duration-300">
+      <h3 class="font-semibold text-lg text-white">Laravel</h3>
+    </div>
+    <div class="bg-secondary-400 p-4 rounded-xl shadow-md hover:-translate-y-2 hover:shadow-primary/30 transition duration-300">
+      <h3 class="font-semibold text-lg text-white">Blade</h3>
+    </div>
+    <div class="bg-secondary-400 p-4 rounded-xl shadow-md hover:-translate-y-2 hover:shadow-primary/30 transition duration-300">
+      <h3 class="font-semibold text-lg text-white">Data Science</h3>
+    </div>
+    <div class="bg-secondary-400 p-4 rounded-xl shadow-md hover:-translate-y-2 hover:shadow-primary/30 transition duration-300">
+      <h3 class="font-semibold text-lg text-white">.NET</h3>
+    </div>
+  </div>
+</section>
+<!-- ===== What I'm Learning Now Section End ===== -->
+
+<!-- ===== Certifications / Achievements ===== -->
+<section id="achievements" class="py-16 bg-secondary-600 text-center reveal">
+  <h2 class="text-3xl font-bold text-white mb-8"> Certifications & Achievements</h2>
+
+  <!-- Swiper container -->
+  <div class="swiper mySwiper max-w-6xl mx-auto px-4">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide bg-secondary-400 p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo" class="w-20 h-20 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-white mb-2">NASA Space Apps Challenge 2025</h3>
+        <p class="text-gray-300 mb-3"> 1st Runners Up — Dhaka Region</p>
+        <a href="https://www.spaceappschallenge.org" target="_blank" class="text-white underline hover:text-primary/80">Visit Website</a>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide bg-secondary-400 p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
+        <img src="./asset/codetree.jpg" alt="CODETREE Logo" class="w-20 h-20 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-white mb-2">CODETREE Internship</h3>
+        <p class="text-gray-300 mb-3">Worked as Designer Intern — UI/UX and Brand Content</p>
+        <a href="https://codetree.io" target="_blank" class="text-white underline hover:text-primary/80">Visit Website</a>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide bg-secondary-400 p-8 rounded-2xl shadow-lg hover:-translate-y-2 transition duration-300">
+        <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy Logo" class="w-20 h-20 mx-auto mb-4">
+        <h3 class="text-xl font-semibold text-white mb-2">Udemy Course</h3>
+        <p class="text-gray-300 mb-3">AI-Powered Email Marketing: A Complete Guide</p>
+        <a href="https://www.udemy.com" target="_blank" class="text-white underline hover:text-primary/80">Visit Website</a>
+      </div>
+
+    </div>
+
+    <!-- Optional Swiper pagination or arrows -->
+    <div class="swiper-pagination mt-6"></div>
+  </div>
+</section>
+<!-- ===== Certifications / Achievements End ===== -->
+
+
+
     <!-- Blog Section Start-->
     <section id="blog" class="text-gray-400 bg-secondary-500 body-font">
       <div class="container px-5 py-24 mx-auto border-t-2 border-secondary-600">
@@ -764,6 +850,7 @@
     </section>
 
     <!--Blog Section End -->
+
 
     <!-- Contact Start -->
     <form
@@ -948,6 +1035,32 @@
     $(".toggle").toggleClass("hidden");
   });
 </script>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 },
+    },
+  });
+</script>
+
+
 
 
   </body>
