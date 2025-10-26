@@ -111,6 +111,10 @@
           class="block md:inline-block text-slate-200 hover:text-primary-500 px-3 py-3 border-b-2 border-primary-500 md:border-none uppercase"
           >Blog</a
         >
+        <a
+          href="#about"
+          class="block md:inline-block text-slate-200 hover:text-primary-500 px-3 py-3 border-b-2 border-primary-500 md:border-none uppercase"
+          >About Me</a>
       </div>
       <a
         href="#contact"
@@ -237,6 +241,8 @@
         </div>
       </div>
     </section>
+
+    
 
     <!-- Hero Section End-->
 
@@ -851,6 +857,28 @@
 
     <!--Blog Section End -->
 
+    <!-- About Me Section Start -->
+
+<!-- About Me Section -->
+<section id="about" class="text-gray-400 bg-secondary-500 body-font py-16">
+  <div class="container mx-auto px-5 text-center">
+    <h2 class="text-4xl font-bold text-white mb-8">About Me</h2>
+    <p class="text-slate-200 leading-relaxed max-w-3xl mx-auto mb-4">
+      Hi! I'm <span class="text-primary-500 font-semibold">Abdullah Al Noman Khan</span>, a passionate Web Developer, System Designer, and UI/UX thinker. 
+      Currently, I'm an undergraduate student of CSE at IUBAT. I love building clean, responsive websites and intelligent management systems that are both functional and beautiful.
+    </p>
+    <p class="text-slate-300 leading-relaxed max-w-3xl mx-auto">
+      I enjoy turning ideas into real-world projects, solving problems, and designing user-friendly interfaces. 
+      Always curious, I love exploring new technologies, improving my skills, and taking on exciting challenges.
+    </p>
+  </div>
+</section>
+
+    <!-- About Me Section End -->
+
+
+
+
 
     <!-- Contact Start -->
     <form
@@ -931,19 +959,66 @@
             </div>
           </div>
         </div>
-      </div>
-    </form>
+        <!-- Social Links (optional) -->
+    <div class="flex justify-center mt-12 space-x-6">
+      <a href="https://www.linkedin.com/in/abdullah-al-noman-khan-639369186/" target="_blank" class="text-primary-500 hover:text-white">
+        LinkedIn
+      </a>
+      <a href="https://github.com/noman1922" target="_blank" class="text-primary-500 hover:text-white">
+        GitHub
+      </a>
+      <a href="mailto:mdnomanahamed22@gmail.com" 
+   id="emailLink" 
+   class="text-primary-500 hover:text-white relative">
+   Email
+</a>
 
+<!-- Email Floating feedback -->
+<span id="copyText" 
+      class="absolute text-sm text-green-500 opacity-0 transition-opacity duration-300">
+  Email Copied!
+</span>
+
+<script>
+const emailLink = document.getElementById('emailLink');
+const copyText = document.getElementById('copyText');
+const email = "mdnomanahamed22@gmail.com";
+
+emailLink.addEventListener('click', (e) => {
+    e.preventDefault(); // prevent default mailto
+    navigator.clipboard.writeText(email).then(() => {
+        copyText.style.opacity = 1;
+        copyText.style.top = '-20px'; // float above link
+        setTimeout(() => {
+            copyText.style.opacity = 0;
+            copyText.style.top = '-30px';
+        }, 1500);
+    });
+});
+</script>
+
+    </div>
+  </div>
+      </div>
+      
+    </form>
     <!-- Contact End-->
 
     <!-- Footer -->
     <footer class="bg-secondary-600">
-      <div
-        class="px-5 py-6 xl:max-w-maxw m-auto text-center text-slate-400 text-sm"
-      >
-        Abdullah Al Noman Khan &copy; <span id="year"></span> | All Rights Reserved.
-      </div>
-    </footer>
+  <div class="px-5 py-6 xl:max-w-maxw m-auto text-center text-slate-400 text-sm">
+    Abdullah Al Noman Khan &copy; <span id="year"></span> | All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+  // This will run after the DOM loads
+  const yearSpan = document.getElementById('year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+</script>
+
     <!-- Footer end -->
 
     <!-- On Scroll Animation AOS script -->
