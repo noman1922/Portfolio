@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+:root {
+  --background: #151312;
+  --foreground: #fffaf6;
+  --muted: #998f8f;
+  --panel: #1d1a19;
+  --line: rgba(255, 255, 255, 0.12);
+  --acid: #c5ff41;
+  --orange: #f46c38;
+  --cream: #faf7f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--background);
+  color: var(--foreground);
+  scroll-padding-top: 96px;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 16% 7%, rgba(244, 108, 56, 0.16), transparent 25rem),
+    radial-gradient(circle at 84% 4%, rgba(197, 255, 65, 0.09), transparent 22rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), system-ui, sans-serif;
+}
+
+button,
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a,
+button,
+input,
+textarea {
+  outline-color: var(--acid);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--acid);
+  color: #151312;
+}
+
+.section-shell {
+  width: min(100% - 32px, 1180px);
+  margin-inline: auto;
+}
+
+.eyebrow {
+  color: var(--orange);
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.display-heading {
+  font-size: clamp(3.1rem, 9vw, 7.6rem);
+  font-weight: 900;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+.ghost-word {
+  display: block;
+  color: rgba(255, 255, 255, 0.11);
+}
+
+.premium-card {
+  border: 1px solid var(--line);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.018));
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+}
+
+.light-band {
+  background:
+    linear-gradient(135deg, rgba(197, 255, 65, 0.2), transparent 32%),
+    var(--cream);
+  color: #151312;
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.055;
+  background-image: linear-gradient(0deg, rgba(255,255,255,.7) 1px, transparent 1px);
+  background-size: 100% 3px;
+  mix-blend-mode: overlay;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
