@@ -40,20 +40,7 @@ export default function Certifications() {
                   <div className="relative mb-4 w-full overflow-hidden rounded">
                     {cert.image ? (
                       <div className="relative h-44 md:h-56 w-full bg-white/5 flex items-center justify-center">
-                        <Image
-                          src={(function(s: string){
-                            if (!s) return s;
-                            if (/^https?:\/\//.test(s)) return s;
-                            const assetPrefix = (typeof window !== 'undefined' && (window as any).__NEXT_DATA__?.assetPrefix) || process.env.NEXT_PUBLIC_BASE_PATH || '';
-                            return `${assetPrefix}${s}`;
-                          })(cert.image)}
-                          alt={cert.title}
-                          fill
-                          className="object-contain"
-                          sizes="(min-width:1024px) 300px, (min-width:640px) 240px, 320px"
-                          loading="lazy"
-                          unoptimized
-                        />
+                        <Image src={cert.image} alt={cert.title} fill className="object-contain" sizes="(min-width:1024px) 300px, (min-width:640px) 240px, 320px" loading="lazy" />
                       </div>
                     ) : (
                       <div className="h-44 md:h-56 w-full rounded bg-white/6 flex items-center justify-center text-sm text-white/60">No image</div>
