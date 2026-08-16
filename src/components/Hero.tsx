@@ -1,6 +1,7 @@
 ﻿import Image from "next/image";
 import { ArrowDownRight, ArrowRight, CheckCircle2, Code2 } from "lucide-react";
 import { highlights, profile, socials, stats } from "@/data/portfolio";
+import assetPath from "@/lib/assetPath";
 
 
 export default function Hero() {
@@ -13,7 +14,7 @@ export default function Hero() {
           <div className="relative h-full w-full bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,.26),transparent_34%),linear-gradient(145deg,#f46c38,#9e2d0b)]">
             {profile.profileImage ? (
               <div className="absolute inset-0 overflow-hidden rounded-xl">
-                <Image src={profile.profileImage} alt={profile.displayName} fill sizes="(max-width: 768px) 320px, 420px" className="object-cover" />
+                 <Image src={assetPath(profile.profileImage as string)} alt={profile.displayName} fill sizes="(max-width: 768px) 320px, 420px" className="object-cover" />
               </div>
             ) : (
               <div className="absolute inset-0 grid place-items-center text-6xl font-black text-white">NK</div>

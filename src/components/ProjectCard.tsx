@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { ArrowUpRight, GitBranch } from "lucide-react";
+import assetPath from "@/lib/assetPath";
 import { motion } from "motion/react";
 import { hoverLift } from "@/lib/animations";
 
@@ -39,7 +40,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       <div className={`relative aspect-[1.45/1] overflow-hidden rounded-lg bg-gradient-to-br ${gradient} p-3 shadow-xl shadow-black/10`}>
         {project.image ? (
           <div className="relative h-full w-full rounded-md border border-black/10 bg-[#151312]/90 p-3">
-            <Image src={project.image} alt={project.title} fill sizes="160px" className="rounded-md object-cover" loading="lazy" />
+            <Image src={assetPath(project.image as string)} alt={project.title} fill sizes="160px" className="rounded-md object-cover" loading="lazy" />
           </div>
         ) : (
           <div className="h-full rounded-md border border-black/10 bg-[#151312]/90 p-3 text-white">
