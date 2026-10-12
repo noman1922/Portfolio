@@ -1,0 +1,80 @@
+[
+  {
+    "id": "enkryx",
+    "title": "ENKRYX",
+    "description": "A software solutions initiative focused on modern web platforms, business systems, automation, and custom digital products.",
+    "specs": "Production architecture featuring Next.js frontend, microservice backend logic, automated CI/CD deployment, and high-performance Tailwind design system.",
+    "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "image": "/images/projects/enkryx.jpg",
+    "accent": "orange",
+    "featured": true,
+    "liveUrl": "https://enkryx.com",
+    "githubUrl": "https://github.com/noman1922/enkryx",
+    "credentialUrl": null
+  },
+  {
+    "id": "th-trade",
+    "title": "TH TRADE CORPORATION",
+    "description": "Stock Management System covering authentication, inventory, POS, invoices, customer dues, and role-based workflows.",
+    "specs": "Enterprise inventory database with PostgreSQL, multi-role RBAC access control, real-time invoice generation, and customer balance tracking.",
+    "tech": ["Laravel", "PHP", "PostgreSQL", "Bootstrap"],
+    "image": "/images/projects/th-trade.jpg",
+    "accent": "acid",
+    "featured": true,
+    "liveUrl": "https://thtrade.com",
+    "githubUrl": "https://github.com/noman1922/th-trade",
+    "credentialUrl": null
+  },
+  {
+    "id": "ticket-management",
+    "title": "TICKET MANAGEMENT SYSTEM",
+    "description": "Full-stack ticket management platform with authentication, REST APIs, database integration, and payment functionality.",
+    "specs": "Built with ASP.NET Core Web API and MongoDB document store. Integrates Stripe payments, JWT auth tokens, and automated event ticket provisioning.",
+    "tech": ["ASP.NET Core Web API", "MongoDB", "Stripe"],
+    "image": "/images/projects/ticket-management.jpg",
+    "accent": "steel",
+    "featured": true,
+    "liveUrl": "https://tickets.enkryx.com",
+    "githubUrl": "https://github.com/noman1922/ticket-management",
+    "credentialUrl": null
+  },
+  {
+    "id": "ecomstack",
+    "title": "ECOMSTACK",
+    "description": "Full-stack e-commerce and POS platform for product, order, payment, and sales management.",
+    "specs": "Node.js and Express backend, React state management, Stripe payment processing webhooks, and sales analytics dashboard.",
+    "tech": ["React", "Node.js", "Stripe"],
+    "image": "/images/projects/ecomstack.jpg",
+    "accent": "orange",
+    "featured": false,
+    "liveUrl": null,
+    "githubUrl": "https://github.com/noman1922/ecomstack",
+    "credentialUrl": null
+  },
+  {
+    "id": "hikma-abroad",
+    "title": "HIKMA ABROAD",
+    "description": "Backend API supporting education and abroad-service workflows with database-driven operations.",
+    "specs": "ASP.NET Core RESTful service interfacing with PostgreSQL for university student applications, visa workflow tracking, and CRM pipelines.",
+    "tech": ["ASP.NET Core", "PostgreSQL"],
+    "image": "/images/projects/hikma-abroad.jpg",
+    "accent": "acid",
+    "featured": false,
+    "liveUrl": null,
+    "githubUrl": "https://github.com/noman1922/hikma-abroad",
+    "credentialUrl": null
+  },
+  {
+    "id": "smart-hospital",
+    "title": "SMART HOSPITAL SYSTEM",
+    "description": "Hospital management system designed around patient, staff, records, and operational workflows.",
+    "specs": "Relational schema modeling medical appointments, doctor schedules, pharmacy prescriptions, and patient records with audit logs.",
+    "tech": ["Web development", "Database systems"],
+    "image": "/images/projects/smart-hospital.jpg",
+    "accent": "steel",
+    "featured": false,
+    "liveUrl": null,
+    "githubUrl": "https://github.com/noman1922/smart-hospital",
+    "credentialUrl": null
+  }
+]

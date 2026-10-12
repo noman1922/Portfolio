@@ -63,7 +63,13 @@ export default function Contact() {
             {socials.map((social) => {
               const Icon = social.icon;
               return (
-                <a key={social.label} href={social.href} className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-bold text-white/72 transition hover:border-[#c5ff41] hover:text-[#c5ff41] focus:outline">
+                <a
+                  key={social.label}
+                  href={social.href}
+                  target={social.href.startsWith("http") ? "_blank" : undefined}
+                  rel={social.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 px-4 py-2 text-sm font-bold text-white/72 transition hover:border-[#c5ff41] hover:text-[#c5ff41] focus:outline"
+                >
                   <Icon className="h-4 w-4" />
                   {social.label}
                 </a>

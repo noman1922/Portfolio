@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
@@ -11,14 +12,19 @@ export default function Navbar() {
 
   useEffect(() => {
     const sections = navItems
-      .map((item) => document.querySelector(item.href))
+      .map((item) => {
+        const hash = item.href.includes("#") ? item.href.split("#")[1] : "";
+        return hash ? document.getElementById(hash) : null;
+      })
       .filter(Boolean) as Element[];
+
+    if (sections.length === 0) return;
 
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries.find((entry) => entry.isIntersecting);
         if (!visible?.target.id) return;
-        const next = navItems.find((item) => item.href === `#${visible.target.id}`);
+        const next = navItems.find((item) => item.href.endsWith(`#${visible.target.id}`));
         if (next) setActive(next.label);
       },
       { rootMargin: "-35% 0px -55% 0px" }
@@ -31,10 +37,10 @@ export default function Navbar() {
   const close = () => setOpen(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 px-4 py-4">
+    <header className="fixed inset-x-0 top-0 z-40 px-3 py-3 sm:px-4 sm:py-4">
       <nav className="mx-auto flex w-full max-w-5xl items-center justify-between rounded-full border border-white/10 bg-[#151312]/80 px-3 py-2 shadow-2xl shadow-black/20 backdrop-blur-xl">
-        <a
-          href="#home"
+        <Link
+          href="/#home"
           className="flex h-10 items-center gap-3 rounded-full px-2 pr-4 text-sm font-bold text-white focus:outline"
           onClick={close}
         >
@@ -42,7 +48,7 @@ export default function Navbar() {
             N
           </span>
           <span className="hidden sm:inline">{profile.displayName}</span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-1 md:flex">
           {navItems.map((item) => {
@@ -50,7 +56,7 @@ export default function Navbar() {
             const isActive = active === item.label;
 
             return (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="group relative flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-white/72 transition hover:text-white focus:outline"
@@ -64,17 +70,17 @@ export default function Navbar() {
                 ) : null}
                 <Icon className="relative h-4 w-4 text-[#c5ff41] opacity-80 transition group-hover:translate-y-[-1px]" />
                 <span className="relative">{item.label}</span>
-              </a>
+              </Link>
             );
           })}
         </div>
 
-        <a
-          href="#contact"
+        <Link
+          href="/#contact"
           className="hidden rounded-full bg-[#f46c38] px-5 py-2 text-sm font-black text-white transition hover:bg-[#ff7b4b] focus:outline md:inline-flex"
         >
           Hire Me
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -98,7 +104,7 @@ export default function Navbar() {
             {navItems.map((item) => {
               const Icon = item.icon;
               return (
-                <a
+                <Link
                   key={item.href}
                   href={item.href}
                   onClick={close}
@@ -106,7 +112,7 @@ export default function Navbar() {
                 >
                   <Icon className="h-4 w-4 text-[#c5ff41]" />
                   {item.label}
-                </a>
+                </Link>
               );
             })}
           </motion.div>
